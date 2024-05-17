@@ -58,3 +58,109 @@ const cancion = 'manzana';
 //cancion = 'banano';
 
 console.log(cancion)
+
+
+
+//Operadores
+
+let result = 2 * "uno"; // NaN
+let jugador = null;
+
+let mascota;
+console.log(mascota) //undefined
+mascota = 'rodolfo';
+console.log(mascota) //rodolfo
+
+//objeto
+let guitar = {
+    color: 'rojo',
+    cuerdas: 6,
+    marca: 'Fender',
+    estuche: true
+}
+
+console.log(guitar.color)
+
+let puntajes = 5;
+
+console.log(puntajes)
+console.log(++puntajes + " puntaje:" + puntajes)
+console.log(puntajes)
+console.log(puntajes++ + " puntaje:" + puntajes)
+console.log(puntajes)
+
+puntajes += 8;
+console.log(puntajes)
+puntajes -= 5;
+console.log(puntajes)
+
+let saldo = 200;
+saldo += 50;
+console.log(saldo)
+saldo += 80;
+console.log(saldo)
+saldo -= 80;
+console.log(saldo)
+saldo -= 10;
+console.log(saldo)
+
+//Operadores de comparación
+
+console.log( Boolean(6>3) ) //true
+console.log( Boolean(6<3) ) //false
+console.log( Boolean(4<=3) ) //false
+console.log( Boolean(4>=3) ) //true
+
+//Operadores de Igualdad
+//== compara solo valor
+//=== compara valor y tipo de dato
+
+console.log( Boolean(6==3) ) //false
+console.log( Boolean(3=='3') ) //true
+console.log( Boolean(3==='3') ) //false
+
+//!= compara solo valor
+//!== compara valor y tipo de dato
+
+console.log( Boolean(6!=3) ) //true
+console.log( Boolean(3!='3') ) //false
+console.log( Boolean(3!=='3') ) //true
+
+//&& se deben cumplir las dos condiciones
+// || se debe cumplir al menos una de las condiciones
+
+console.log( 6!=3 && 3!=='3') //true
+console.log( 6!=3 && 3!='3') //false
+console.log( 6===3 && 3!='3') //false
+console.log( 'pedro'== 'Pedro' && 'Pedro' == 'Pedro') //false
+
+//Condicionales
+
+/* let telefono = Number( prompt('que versión de iphone tiene') );
+
+if(telefono >= 13 ){
+    console.log('Puedes entrar al grupo de whatsapp')
+}else{
+    console.log('no puedes entrar al grupo')
+} */
+
+//Estructura if, else if, else
+// .toLowerCase() //convierte cadena de caracteres a minúscula
+// .toUpperCase() //convierte cadena de caracteres a mayúscula
+
+//colombia   Colombia  ColOmBia  COLOMBIA
+
+let tuPais = prompt('dime un país').toLowerCase();
+
+if(tuPais === 'colombia'){
+    console.log('bandeja paisa')
+}else if(tuPais === 'mexico'){
+    console.log('mole')
+}else if(tuPais === 'peru'){
+    console.log('hamburguesa')
+}else if(tuPais === 'argentina'){
+    console.log('choripan')
+}else{
+    console.log('No come')
+}
+
