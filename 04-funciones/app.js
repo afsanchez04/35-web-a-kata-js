@@ -1,6 +1,6 @@
 
-
-/* function saludar (nombre, equipo){
+/*
+function saludar (nombre, equipo){
     return `Hola ${nombre} bienvenido al equipo ${equipo}`
 }
 
@@ -64,9 +64,10 @@ const determinarAhorro = function (){
 
 }
 
+
 //Función de tipo flecha o arrow function
 
-/* const sumarTres = (n1,n2,n3) => {
+ /*const sumarTres = (n1,n2,n3) => {
     console.log('Ejecutando función de tipo flecha')
     let result = n1+n2+n3
     console.log(`El resultado de la suma es: ${result}`)
